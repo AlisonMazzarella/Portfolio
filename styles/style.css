@@ -1,0 +1,136 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light gray background */
+    color: #333; /* Darker text for contrast */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6f61; /* Vivid red for headers */
+    margin: 20px 0;
+    animation: rainbowText 5s infinite alternate; /* Colorful text animation */
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f9c22e; /* Bright orange for headers */
+    margin: 15px 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Update Carousel section styles */
+.carousel {
+    margin: 20px auto; /* Adjust margin as needed */
+    max-width: 80%; /* Adjust maximum width based on your layout */
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.carousel img {
+    width: 100%; /* Ensure images take full width of the carousel */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius for a softer look */
+}
+
+/* About section styles */
+#about {
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: linear-gradient(to right, #ff6f61, #f9c22e); /* Gradient background */
+    animation: scaleIn 1s ease-out;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    color: #333; /* Darker text */
+    font-weight: 600;
+}
+
+.about-image img {
+    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.about-image img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Portfolio section styles */
+#portfolio {
+    padding: 40px 20px;
+}
+
+.project-summary {
+    background: #fff; /* White background */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-summary:hover {
+    transform: translateY(-5px);
+}
+
+.project-summary h3 {
+    font-size: 1.5em;
+    color: #333; /* Darker text */
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+#contact {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(to right, #f9c22e, #ff6f61); /* Updated gradient background */
+    color: #fff; /* White text */
+    animation: slideInFromBottom 1.5s ease-out;
+}
+
+#contact a {
+    color: #ff6f61; /* Vivid red */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #f9c22e; /* Bright orange on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #f4f4f4; /* Light gray background */
+    color: #333; /* Darker text for contrast */
+    font-weight: 800;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Keyframe animations */
+@keyframes rainbowText {
+    0% { color: #ff6f61; }
+    20% { color: #f9c22e; }
+    40% { color: #00b4d8; }
+    60% { color: #47ab2f; }
+    80% { color: #ff67be; }
+    100% { color: #ff6f61; }
+}
