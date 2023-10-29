@@ -18,16 +18,15 @@ function initCarousel() {
         ]
     });
 
-    // On hover, adjust the styles of the middle image
-    $('.carousel-container').on('mouseenter', '.slick-center', function() {
-        $(this).css('transform', 'scale(1.05)'); // Increase the size slightly on hover
-        $(this).siblings().not('.slick-center').css('transform', 'scale(0.9)'); // Decrease the size of other slides
-    }).on('mouseleave', '.slick-center', function() {
-        $(this).add($(this).siblings()).css('transform', 'scale(1)'); // Reset the scale on mouse leave
+    $('.carousel-container').on('mouseenter', '.slick-slide', function() {
+        $('.slick-slide').removeClass('scaled-down scaled-up'); // Reset styles for all slides
+        $(this).addClass('scaled-up'); // Pop-up the hovered slide
+        $('.slick-slide').not(this).addClass('scaled-down'); // Scale down other slides
+    }).on('mouseleave', function() {
+        $('.slick-slide').removeClass('scaled-down scaled-up'); // Reset styles on mouse leave
     });
 }
 
-// Entrance animations when the page loads
 window.addEventListener('load', (event) => {
     animateEntrance();
     initCarousel(); // Initialize the carousel after the entrance animations

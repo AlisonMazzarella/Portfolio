@@ -93,6 +93,20 @@ p {
     margin-bottom: 10px;
 }
 
+.slick-slide {
+    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.scaled-down {
+    transform: scale(0.9); /* Decrease the size of other slides */
+    z-index: 1; /* Ensure scaled-down slides stay behind */
+}
+
+.scaled-up {
+    transform: scale(1.05); /* Increase the size of the hovered slide */
+    z-index: 2; /* Ensure scaled-up slide appears on top */
+}
+
 /* Contact section styles */
 #contact {
     text-align: center;
