@@ -3,73 +3,70 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4; /* Light gray background */
-    color: #333; /* Darker text for contrast */
+    background: #f9f9f9; /* Lighter background for a professional look */
+    color: #444; /* Slightly darker text for better readability */
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scrollbars */
 }
 
 h1 {
     font-size: 3em;
-    color: #ff6f61; /* Vivid red for headers */
+    color: #333; /* Darker color for headers */
     margin: 20px 0;
-    animation: rainbowText 5s infinite alternate; /* Colorful text animation */
 }
 
 h2 {
     font-size: 2.5em;
-    color: #f9c22e; /* Bright orange for headers */
+    color: #555; /* Slightly subdued color for headers */
     margin: 15px 0;
 }
 
 p {
     font-size: 1.1em;
-    margin-bottom: 25px;
+    margin-bottom: 20px; /* Reduced margin for a compact look */
 }
 
 /* Update Carousel section styles */
 .carousel {
-    margin: 20px auto; /* Adjust margin as needed */
-    max-width: 80%; /* Adjust maximum width based on your layout */
-    background: #fff; /* White background */
+    margin: 20px auto;
+    max-width: 80%;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel img {
-    width: 100%; /* Ensure images take full width of the carousel */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add border radius for a softer look */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 /* About section styles */
 #about {
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background: linear-gradient(to right, #ff6f61, #f9c22e); /* Gradient background */
-    animation: scaleIn 1s ease-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9; /* Lighter background for the about section */
 }
 
 .about-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: center; /* Removed unnecessary flex direction */
 }
 
 .about-text {
     flex: 1;
-    color: #333; /* Darker text */
-    font-weight: 600;
+    color: #333;
+    font-weight: 500; /* Slightly reduced font weight for a softer look */
 }
 
 .about-image img {
-    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+    transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
-    transform: scale(1.1); /* Scale the image on hover */
+    transform: scale(1.05); /* Slightly smaller scale on hover for subtlety */
 }
 
 /* Portfolio section styles */
@@ -78,21 +75,21 @@ p {
 }
 
 .project-summary {
-    background: #fff; /* White background */
+    background: #fff;
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
 .project-summary:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px); /* Reduced movement on hover */
 }
 
 .project-summary h3 {
     font-size: 1.5em;
-    color: #333; /* Darker text */
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -100,45 +97,31 @@ p {
 #contact {
     text-align: center;
     padding: 60px;
-    background: linear-gradient(to right, #f9c22e, #ff6f61);
-    color: #fff;
-    animation: slideInFromBottom 1.5s ease-out;
+    background: #f9f9f9;
+    color: #444;
 }
 
 #contact h2 {
-    color: #e74c3c;
+    color: #444;
     font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.6);
     margin: 0;
 }
 
 #contact a {
     color: #e74c3c;
-    text-decoration: underline;
+    text-decoration: none; /* Removed underline for a cleaner look */
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: #f9c22e; /* Changing the color on hover for strong contrast */
-    text-decoration: none;
-    font-weight: bold; /* Making the text bold on hover for emphasis */
+    color: #ff6f61; /* Warmer color on hover for emphasis */
+    font-weight: 600; /* Slight increase in font weight on hover */
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 30px;
-    background: #f4f4f4; /* Light gray background */
-    color: #333; /* Darker text for contrast */
-    animation: fadeInUp 1.5s ease-out;
-}
-
-/* Keyframe animations */
-@keyframes rainbowText {
-    0% { color: #ff6f61; }
-    20% { color: #f9c22e; }
-    40% { color: #00b4d8; }
-    60% { color: #47ab2f; }
-    80% { color: #ff67be; }
-    100% { color: #ff6f61; }
+    background: #f9f9f9;
+    color: #555;
 }
