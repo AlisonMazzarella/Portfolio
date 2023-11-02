@@ -1,3 +1,14 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+    .about-text {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+}
+
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
