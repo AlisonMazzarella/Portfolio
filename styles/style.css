@@ -3,30 +3,38 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9; /* Lighter background for a professional look */
-    color: #444; /* Slightly darker text for better readability */
+    background: #f9f9f9; 
+    color: #444; 
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #f8f8f8; 
+    padding: 20px; 
+    text-align: center; 
 }
 
 h1 {
     font-size: 3em;
-    color: #333; /* Darker color for headers */
-    margin: 20px 0;
+    color: #333; 
+    margin: 10px 0; 
+    text-transform: uppercase; 
 }
 
 h2 {
     font-size: 2.5em;
-    color: #555; /* Slightly subdued color for headers */
-    margin: 15px 0;
+    color: #555; 
+    margin: 10px 0; 
+    font-style: italic; 
 }
 
 p {
     font-size: 1.1em;
-    margin-bottom: 20px; /* Reduced margin for a compact look */
+    margin-bottom: 20px; 
 }
 
-/* Update Carousel section styles */
+/* Carousel section styles */
 .carousel {
     margin: 20px auto;
     max-width: 80%;
@@ -47,26 +55,29 @@ p {
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background: #f9f9f9; /* Lighter background for the about section */
+    background: #f9f9f9; 
 }
 
 .about-content {
     display: flex;
-    align-items: center; /* Removed unnecessary flex direction */
+    align-items: center; 
 }
 
 .about-text {
     flex: 1;
     color: #333;
-    font-weight: 500; /* Slightly reduced font weight for a softer look */
+    font-weight: 500; 
+    margin-right: 20px; 
 }
 
 .about-image img {
+    max-width: 100%; 
+    display: block; 
     transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
-    transform: scale(1.05); /* Slightly smaller scale on hover for subtlety */
+    transform: scale(1.05); 
 }
 
 /* Portfolio section styles */
@@ -84,7 +95,7 @@ p {
 }
 
 .project-summary:hover {
-    transform: translateY(-3px); /* Reduced movement on hover */
+    transform: translateY(-3px); 
 }
 
 .project-summary h3 {
@@ -94,17 +105,17 @@ p {
 }
 
 .slick-slide {
-    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+    transition: transform 0.3s ease; 
 }
 
 .scaled-down {
-    transform: scale(0.9); /* Decrease the size of other slides */
-    z-index: 1; /* Ensure scaled-down slides stay behind */
+    transform: scale(0.9); 
+    z-index: 1; 
 }
 
 .scaled-up {
-    transform: scale(1.05); /* Increase the size of the hovered slide */
-    z-index: 2; /* Ensure scaled-up slide appears on top */
+    transform: scale(1.05); 
+    z-index: 2; 
 }
 
 /* Contact section styles */
@@ -123,13 +134,13 @@ p {
 
 #contact a {
     color: #e74c3c;
-    text-decoration: none; /* Removed underline for a cleaner look */
+    text-decoration: none; 
     transition: color 0.3s ease-in-out;
 }
 
 #contact a:hover {
-    color: #ff6f61; /* Warmer color on hover for emphasis */
-    font-weight: 600; /* Slight increase in font weight on hover */
+    color: #ff6f61; 
+    font-weight: 600; 
 }
 
 /* Footer styles */

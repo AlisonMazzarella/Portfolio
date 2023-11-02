@@ -33,5 +33,5 @@ window.addEventListener('load', (event) => {
 });
 
 function animateEntrance() {
-    // Your existing entrance animation function
+    // entrance animation function
 }
